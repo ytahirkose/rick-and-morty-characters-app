@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rick and Morty Characters App
 
-## Getting Started
+**PRIVATE PROJECT - COMMERCIAL USE PROHIBITED**
 
-First, run the development server:
+## ⚠️ IMPORTANT WARNING AND LICENSE TERMS
+
+This project has been **PRIVATELY DEVELOPED** by **YASAR TAHİRKÖSE** and **COMMERCIAL USE IS PROHIBITED**. The following conditions and legal responsibilities apply:
+
+### 🚫 PROHIBITED USES:
+- Commercial purposes
+- Sale, rental, or commercial distribution
+- Integration in commercial projects
+- Use in paid services
+- Creation of commercial trademarks or patents
+
+### ✅ PERMITTED USES:
+- Personal learning and educational purposes
+- Reference in open source projects (with proper attribution)
+- Teaching purposes in non-profit educational institutions
+
+### ⚖️ LEGAL RESPONSIBILITIES:
+Individuals or organizations using this project for the above prohibited purposes will be:
+- Held responsible for copyright infringement
+- Subject to legal sanctions
+- Required to pay material and moral compensation
+- Prosecuted under criminal law
+
+### 📞 CONTACT AND PERMISSION:
+If you want to obtain special permission for commercial use:
+- **Developer**: YASAR TAHİRKÖSE
+- **Contact**: [Contact information kept private]
+- **License Fee**: Special license fee required for commercial use
+
+---
+
+## 🚀 Project Features
+
+Modern, responsive web application - designed to explore Rick and Morty characters with advanced filtering and pagination capabilities.
+
+### ✨ Main Features:
+- Character browsing and filtering
+- Status and gender-based filtering
+- URL-based state management
+- Server-Side Rendering (SSR)
+- Responsive design
+- Real-time updates
+- Pagination system
+
+### 🛠️ Technology Stack:
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: Zustand
+- **Data Fetching**: React Query (TanStack Query)
+- **URL Management**: nuqs
+- **UI Components**: shadcn/ui
+- **Linting**: ESLint + Prettier
+- **Git Hooks**: Husky + lint-staged
+
+## 📋 Installation
+
+### Requirements:
+- Node.js 18+
+- npm or yarn
+
+### Steps:
 
 ```bash
+git clone <repository-url>
+cd rick-and-morty-app
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎯 Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `npm run dev` - Start development server
+- `npm run build` - Production build
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run lint:fix` - Fix ESLint issues automatically
+- `npm run format` - Format code with Prettier
 
-## Learn More
+## 🏗️ Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                    # Next.js app router
+│   ├── layout.tsx         # Root layout
+│   ├── page.tsx           # Main page
+│   └── globals.css        # Global styles
+├── components/             # React components
+│   ├── ui/                # Reusable UI components
+│   ├── character-card.tsx # Character card
+│   ├── character-filters.tsx # Filter controls
+│   ├── character-grid.tsx # Character grid layout
+│   └── pagination.tsx     # Pagination controls
+├── hooks/                  # Custom React hooks
+├── lib/                    # Utility libraries
+├── store/                  # State management
+└── types/                  # TypeScript type definitions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 API Integration
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Integration with Rick and Morty API:
+- **Base URL**: `https://rickandmortyapi.com/api`
+- **Endpoint**: `/character`
+- **Query Parameters**: `status`, `gender`, `page`
 
-## Deploy on Vercel
+## 🎨 UI/UX Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Modern, clean design
+- Responsive grid system
+- Loading animations
+- Error handling
+- Accessibility support
+- Dark mode ready
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔍 Filtering and Search
+
+- Status filter (Alive, Dead, Unknown)
+- Gender filter (Female, Male, Genderless, Unknown)
+- Combined filters
+- URL persistence
+- Real-time updates
+
+## 📱 Responsive Design
+
+- Mobile-first approach
+- Responsive breakpoints
+- Touch-friendly optimization
+- Performance optimization
+
+## 🚀 Performance Features
+
+- Smart caching with React Query
+- Image optimization
+- Code splitting
+- Server-side rendering
+
+---
+
+## 📄 License
+
+**This project is protected under a private license. Commercial use is prohibited.**
+
+## ⚖️ Legal Warning
+
+Individuals or organizations using this project for prohibited purposes will be prosecuted for copyright infringement and other legal responsibilities.
+
+---
+
+**Developer**: YASAR TAHİR KÖSE  
+**Project Date**: 2025  
+**License Status**: Private License - Commercial Use Prohibited
